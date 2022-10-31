@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    // NICHOLAS ALMODOVAR
+UATSpace page for CSC102 at UAT.edu
+by Nicholas Almodovar
+nicalmod@uat.edu
+
+Assignment: Launching your UAT Space Program HTML Document Tags
+12 Sep 2022
+Webpage with html and CSS
+
+-->
+<html>
+
+<head>
+    <script src="code.js"> </script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>
+        Nicholas Almodovar's UATSpace Page
+    </title>
+
+
+
+</head>
+
+<body>
+    <script>
+        var alertText = "test of the alert function. ";
+        var docWriteText = "This is a test of the document.write function.";
+        var welcomeText = " Welcome to UAT Space!";
+    </script>
+    <img src="UATspaceLogo-1.jpg">
+
+    <h1 id="blinkText">
+
+        UAT Space Program
+
+    </h1>
+
+
+    <p>
+        Test of the paragraph tags. <br>
+        The Paragraph tags are used in html to display more than one sentence. <br>
+        This can be more than one line of text.<br>
+    </p>
+    <script>
+        //alert(alertText + welcomeText);
+        document.write(docWriteText + welcomeText);
+    </script>
+    <br>
+    <br>
+    <H2>Blastoff Timer</H2>
+    <div id="countDis">When Started, Time left to Blastoff will appear here</div>
+    <br>
+    <br>
+    <button onclick="btrCountdownTimer();">Start</button>
+    <button>
+        Stop
+    </button>
+    <script type="text/javascript">
+        var blink = document.getElementById('blinkText');
+        setInterval(function () {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+    </script>
+    <br>
+    <br>
+    <!--Playing craps here-->
+    <h1>Craps Game</h1>
+    <div id="die1Res"> The die 1 result will go here</div><br>
+    <div id="die2Res"> The die 2 result will go here</div><br>
+    <div id="gameRes"> The game results will go here</div><br>
+    <button onclick="playCraps();">Play Craps</button>
+
+
+</body>
+
+
+</html>

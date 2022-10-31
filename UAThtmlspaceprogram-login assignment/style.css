@@ -1,0 +1,11 @@
+#blinkText {
+    color: darkblue;
+    transition: 0.5s;
+}
+#countDis {
+    color: green;
+
+}
+body{
+    background-color: grey;
+}
